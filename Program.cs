@@ -1,13 +1,11 @@
-﻿string input = "";
+﻿string input = Console.ReadLine();
 List<string> temp = new List<string>();
 while (input!="stop")
-{
-    input=Console.ReadLine();
+{   
     temp.Add(input);
-       
-
+    input = Console.ReadLine();
 }
-temp.RemoveAt(temp.Count-1);
+
 int [] x = new int[temp.Count];
 Console.Clear();
 for (int i = 0; i < temp.Count; i++)
